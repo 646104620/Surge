@@ -1119,7 +1119,7 @@ if (result.result === 1) {
     try {
       const { body: result } = await sendRequest({
         method: "POST",
-        url: "http://127.0.0.1:8888/encsign",
+        url: "http://61.140.235.250:13315/encsign",
         body: JSON.stringify({ data: requestData }),
         headers: { "Content-Type": "application/json" },
       });
@@ -1146,7 +1146,7 @@ if (result.result === 1) {
     const { body: result } = await sendRequest(
       {
         method: "POST",
-        url: "http://127.0.0.1:8888/nssig",
+        url: "http://61.140.235.250:13315/nssig",
         headers: { "Content-Type": "application/json", "User-Agent": "Mozilla/5.0" },
         body: JSON.stringify(newreqdata),
         timeout: 15000,
